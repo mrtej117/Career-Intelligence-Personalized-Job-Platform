@@ -1,0 +1,94 @@
+# =============================================================================
+# Root .gitignore — Career Intelligence Personalized Job Platform (JobSphere)
+# =============================================================================
+
+# --- Environment & Sensitive Credentials ---
+.env
+.env.local
+.env.*.local
+.env.production
+**/.env
+**/.env.local
+**/.env.production
+!Frontend/JobPortalFront/.env.development
+!Backend/JobPortal/src/main/resources/application.properties.example
+
+# --- Java & Maven Build Outputs ---
+target/
+**/target/
+build/
+**/build/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+
+# --- Node & Frontend Build Outputs ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+
+# --- IDEs & Editors ---
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+**/.vscode/
+!.vscode/extensions.json
+.settings/
+.project
+.classpath
+.factorypath
+.apt_generated/
+.sts4-cache/
+.springBeans
+nbproject/private/
+nbbuild/
+nbdist/
+
+# --- Logs & Debug Outputs ---
+logs/
+**/logs/
+*.log
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+error.txt
+error2.txt
+build.log
+build2.log
+
+# --- User Uploads & Personal Documents (Resumes / Pictures) ---
+uploads/
+**/uploads/
+uploads/resumes/
+uploads/profile-pictures/
+*.pdf
+!docs/**/*.pdf
+
+# --- Temporary Scratch, Test Run, and Internal Progress Artifacts ---
+scratch/
+research/
+test-results/
+final_report_*.md
+stage*_final_report.md
+how a70203*
+
+# --- Operating System & Database Files ---
+.DS_Store
+Thumbs.db
+*.db
+*.sqlite
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

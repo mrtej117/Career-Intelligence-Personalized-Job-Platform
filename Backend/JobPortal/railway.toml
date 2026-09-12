@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+buildCommand = "chmod +x mvnw && ./mvnw -DskipTests clean install"
+
+[deploy]
+startCommand = "java -Dserver.port=$PORT -jar target/JobPortal-0.0.1-SNAPSHOT.jar"
+restartPolicyType = "on_failure"

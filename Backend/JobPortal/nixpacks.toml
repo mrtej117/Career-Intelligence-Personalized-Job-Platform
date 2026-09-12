@@ -1,0 +1,5 @@
+[phases.build]
+cmds = ["chmod +x mvnw && ./mvnw -DskipTests clean install"]
+
+[start]
+cmd = "java -Dserver.port=$PORT -jar target/JobPortal-0.0.1-SNAPSHOT.jar"
